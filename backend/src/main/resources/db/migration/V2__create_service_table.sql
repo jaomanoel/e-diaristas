@@ -1,0 +1,21 @@
+CREATE TABLE public.service_model (
+    id SERIAL NOT NULL PRIMARY KEY,
+    backyard_hours integer NOT NULL,
+    backyard_value numeric(38,2) NOT NULL,
+    bathroom_hours integer NOT NULL,
+    bathroom_value numeric(38,2) NOT NULL,
+    commission_percentage numeric(38,2) NOT NULL,
+    icon character varying(14) NOT NULL,
+    kitchen_hours integer NOT NULL,
+    kitchen_value numeric(38,2) NOT NULL,
+    livingroom_hours integer NOT NULL,
+    livingroom_value numeric(38,2) NOT NULL,
+    min_value numeric(38,2) NOT NULL,
+    name character varying(50) NOT NULL,
+    other_hours integer NOT NULL,
+    other_value numeric(38,2) NOT NULL,
+    "position" integer NOT NULL,
+    qtt_hours integer NOT NULL,
+    room_hours integer NOT NULL,
+    room_value numeric(38,2) NOT NULL
+);
