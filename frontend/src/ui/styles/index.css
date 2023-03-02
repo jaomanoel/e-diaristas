@@ -1,11 +1,11 @@
-*{
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  box-shadow: none;
-  border: none;
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-shadow: none;
+    border: none;
 }
 
 body {
-  font-family: Poppins, Roboto, sans-serif;
+    font-family: Poppins, Roboto, sans-serif;
 }

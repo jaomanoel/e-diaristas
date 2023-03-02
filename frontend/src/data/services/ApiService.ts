@@ -1,6 +1,6 @@
 import Axios from 'axios';
 
-const URL_BASE = 'http://localhost:8080';
+const URL_BASE = import.meta.env.BASE_URL;
 
 export const ApiService = Axios.create({
     baseURL: URL_BASE,
