@@ -25,8 +25,8 @@ export default function (plop) {
                         value: "inputs",
                     },
                     {
-                        name: "Navigations",
-                        value: "navigations",
+                        name: "Navigation",
+                        value: "navigation",
                     },
                     {
                         name: "Surface",
