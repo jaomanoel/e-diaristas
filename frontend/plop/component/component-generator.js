@@ -1,66 +1,66 @@
-export default function(plop) {
-    plop.setGenerator('component', {
-        description: 'Component',
+export default function (plop) {
+    plop.setGenerator("component", {
+        description: "Component",
         prompts: [
             {
-                name: 'name',
-                type: 'input',
-                message: 'Name of Component: '
+                name: "name",
+                type: "input",
+                message: "Name of Component: ",
             },
             {
-                name: 'type',
-                type: 'list',
-                message: 'Type of Component: ',
+                name: "type",
+                type: "list",
+                message: "Type of Component: ",
                 choices: [
                     {
-                        name: 'Data Display',
-                        value: 'data-display'
+                        name: "Data Display",
+                        value: "data-display",
                     },
                     {
-                        name: 'Feedback',
-                        value: 'feedback'
+                        name: "Feedback",
+                        value: "feedback",
                     },
                     {
-                        name: 'Inputs',
-                        value: 'inputs'
+                        name: "Inputs",
+                        value: "inputs",
                     },
                     {
-                        name: 'Navigation',
-                        value: 'navigation'
+                        name: "Navigations",
+                        value: "navigations",
                     },
                     {
-                        name: 'Surface',
-                        value: 'surface'
+                        name: "Surface",
+                        value: "surface",
                     },
-                ]
-            }
+                ],
+            },
         ],
-        actions(data){
+        actions(data) {
             const basePath = `src/ui/components/${data.type}/${data.name}/`;
             const actions = [
                 {
-                    type: 'add',
+                    type: "add",
                     path: `${basePath}/${data.name}.tsx`,
-                    templateFile: 'plop/component/component-template.hbs'
+                    templateFile: "plop/component/component-template.hbs",
                 },
                 {
-                    type: 'add',
+                    type: "add",
                     path: `${basePath}/${data.name}.style.tsx`,
-                    templateFile: 'plop/component/component-style-template.hbs'
+                    templateFile: "plop/component/component-style-template.hbs",
                 },
                 {
-                    type: 'add',
+                    type: "add",
                     path: `${basePath}/${data.name}.stories.tsx`,
-                    templateFile: 'plop/component/component-story-template.hbs'
+                    templateFile: "plop/component/component-story-template.hbs",
                 },
                 {
-                    type: 'add',
+                    type: "add",
                     path: `${basePath}/${data.name}.test.tsx`,
-                    templateFile: 'plop/component/component-test-template.hbs'
+                    templateFile: "plop/component/component-test-template.hbs",
                 },
             ];
 
             return actions;
-        }
-    })
-};
+        },
+    });
+}
