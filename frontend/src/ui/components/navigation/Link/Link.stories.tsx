@@ -4,7 +4,7 @@ import RoundedButton from "../../inputs/RoundedButton/RoundedButton";
 import Link from "./Link";
 
 export default {
-    title: "navigations/Link",
+    title: "navigation/Link",
     component: Link,
 } as ComponentMeta<typeof Link>;
 
