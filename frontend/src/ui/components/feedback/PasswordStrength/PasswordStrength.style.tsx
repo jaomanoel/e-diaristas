@@ -1,7 +1,5 @@
 import { styled } from "@mui/material/styles";
 import { LinearProgress, Theme } from "@mui/material";
-import { getValue } from "@mui/system";
-// import { PasswordStrengthProps } from "./PasswordStrength";
 
 export const PasswordStrengthLabel = styled("span", {
     shouldForwardProp: (prop) => prop != "value",
